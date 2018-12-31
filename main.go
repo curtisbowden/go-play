@@ -5,7 +5,7 @@ import (
 	"unicode"
 )
 
-func IsPalindrome(str string) bool {
+func isPalindrome(str string) bool {
 
 	for i, j := 0, len(str)-1; i < len(str); i, j = i+1, j-1 {
 		fmt.Println("i:", i, "j:", j)
@@ -20,10 +20,10 @@ func IsPalindrome(str string) bool {
 
 func main() {
 
-	IsPalindrome("a")
-	IsPalindrome("aba")
-	IsPalindrome("abba")
-	IsPalindrome("Abba")
-	IsPalindrome("nbba")
+	isPalindrome("a")
+	isPalindrome("aba")
+	isPalindrome("abba")
+	isPalindrome("Abba")
+	isPalindrome("nbba")
 
 }
