@@ -2,23 +2,11 @@ package main
 
 import (
 	"fmt"
-	"unicode"
 )
 
-func isPalindrome(str string) bool {
-
-	for i, j := 0, len(str)-1; i < len(str); i, j = i+1, j-1 {
-		fmt.Println("i:", i, "j:", j)
-		if unicode.ToLower(rune(str[i])) != unicode.ToLower(rune(str[j])) {
-			fmt.Println(str, "False")
-			return false
-		}
-	}
-	fmt.Println(str, "True")
-	return true
-}
-
 func main() {
+
+	fmt.Println("Checking Palindromes!  ******")
 
 	isPalindrome("a")
 	isPalindrome("aba")
@@ -26,4 +14,11 @@ func main() {
 	isPalindrome("Abba")
 	isPalindrome("nbba")
 
+	fmt.Println("")
+
+	arr := []int{8, 3, 6, 5, 9, 1, 4, 0, 7, 2}
+
+	bubbleInt(arr)
+
+	return
 }
