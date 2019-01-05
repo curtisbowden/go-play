@@ -14,11 +14,11 @@ func main() {
 	isPalindrome("Abba")
 	isPalindrome("nbba")
 
-	fmt.Println("")
-
 	arr := []int{8, 3, 6, 5, 9, 1, 4, 0, 7, 2}
 
-	bubbleInt(arr)
+	fmt.Println("Before:", arr)
+	bubbleSort(arr)
+	fmt.Println("After:", arr)
 
 	return
 }
